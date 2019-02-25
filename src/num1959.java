@@ -1,32 +1,33 @@
 import java.util.*;
 
 public class num1959 {
-    public static int sum(int N, int M, int[] aArr, int[]bArr){
-        int tmp = 0;
-        int cnt = N;
-        int[] sumArr = new int[N];
+    public static int mul(int[] A, int[] B){
+        int result = 0;
+        int temp = 0;
+        int cnt = A.length;
 
-        for(int i = 0; i < N; i++){
-
+        for(int i = 0; i < A.length; i++){
+            result = A[i] * B[i];
         }
 
-        return 0;
-
-
-
+        return result;
     }
-
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        int N = scanner.nextInt();
-        int M = scanner.nextInt();
+        int test_case = scanner.nextInt();
+        for(int t = 1; t <= test_case; t++) {
+            int N = scanner.nextInt();
+            int M = scanner.nextInt();
 
-        int[] aArr = new int[N];
-        int[] bArr = new int[M];
-
-
-        System.out.println(sum(N, M, aArr, bArr));
-
+            int[] A = new int[N];
+            for (int i = 0; i < N; i++) {
+                A[i] = scanner.nextInt();
+            }
+            int[] B = new int[M];
+            for (int i = 0; i < M; i++) {
+                B[i] = scanner.nextInt();
+            }
+        }
     }
 }

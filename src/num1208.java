@@ -2,70 +2,72 @@ import java.util.*;
 
 public class num1208 {
 
-    public static int dump(int[] box, int dumcnt){
-        int result;
-        int max_idx = 0;
-        int min_idx = 0;
+    public static int dump(int[] box, int dumpcnt){
+        int max = 0, min = 0;
+        int maxidx = 0, minidx = 0;
 
-        while(dumcnt != 0) {
-            for (int i = 1; i < box.length; i++) {
-                if (box[max_idx] < box[i] && box[max_idx] != box[i]) {
+        // 덤프 작업
+        while(dumpcnt != 0) {
+            dumpcnt--;
 
-                    max_idx = i;
+            max = box[0];
+            min = box[0];
+
+            maxidx = 0;
+            minidx = 0;
+            for (int i = 0; i < box.length; i++) {
+                //최대값
+                if (box[i] > max) {
+                    max = box[i];
+                    maxidx = i;
                 }
-                if (box[min_idx] > box[i] && box[min_idx] != box[i]) {
-
-                    min_idx = i;
+                //최소값
+                if (box[i] < min) {
+                    min = box[i];
+                    minidx = i;
                 }
             }
-
-            box[max_idx]--;
-            box[min_idx]++;
-
+            box[maxidx] = box[maxidx] - 1;
+            box[minidx] = box[minidx] + 1;
 
 
-            if(box[max_idx] - box[min_idx] == 0 || box[max_idx] - box[min_idx] == 1)
-                break;
-
-            dumcnt--;
-
-            for(int i = 0; i < box.length; i++){
-                System.out.print(box[i] + " ");
-            }
-            System.out.println();
-        }
-
-        for (int i = 1; i < box.length; i++) {
-            if (box[max_idx] < box[i] && box[max_idx] != box[i]) {
-
-                max_idx = i;
-            }
-            if (box[min_idx] > box[i] && box[min_idx] != box[i]) {
-
-                min_idx = i;
-            }
         }
 
 
-        return box[max_idx] - box[min_idx];
+        for(int i = 0; i < box.length-1; i++){
+            max = i;
+            for(int j = i+1; j < box.length; j++){
+                if(box[max] < box[j]){
+                    max = j;
+                }
+            }
+            if(max != i){
+                int temp = box[max];
+                box[max] = box[i];
+                box[i] = temp;
+            }
+        }
+
+        return box[0] - box[box.length-1];
+
+
+
+
     }
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int dumcnt;
-        int[] box = new int[100];
 
-        //for(int j = 0; j < 10; j++) {
-            dumcnt = scanner.nextInt();
-            if(dumcnt > 0 && dumcnt < 1001) {
+        for(int t = 1; t <= 10; t++) {
+            int dumpcnt = scanner.nextInt();
 
-                for (int i = 0; i < box.length; i++) {
-                    box[i] = scanner.nextInt();
-
-                }
-                System.out.println("#" + " " + dump(box, dumcnt));
+            int[] box = new int[100];
+            for (int i = 0; i < box.length; i++) {
+                box[i]= scanner.nextInt();
             }
-        //}
+
+            System.out.println("#" + t + " " + dump(box, dumpcnt));
+        }
 
     }
 }

@@ -2,9 +2,10 @@ import java.util.*;
 
 public class SWPS_4_3 {
 
-    static int minX = 0;
-    static int minY = 0;
     public static int min(int[][] arr){
+
+        int minX = 0;
+        int minY = 0;
         int min = arr[0][0];
 
         for(int i = 0; i < 5; i++){
@@ -16,22 +17,44 @@ public class SWPS_4_3 {
                 }
             }
         }
-        arr[minX][minY] = 999;
+        arr[minX][minY] = 26;
 
         return min;
     }
-    public static int[][] sorting(int[][] arr){
+    public static void sorting(int[][] arr){
         int[][] sortArr = new int[5][5];
+        int cur_min = -1;
+        int X = 0;
+        int Y = 0;
+        int newX = 0, newY = 0;
 
-        int dx[] = {1, -1, 0, 0};
-        int dy[] = {0, 0, 1, -1};
+        int dx[] = {1, 0, -1, 0};
+        int dy[] = {0, 1, 0, -1};
+        int dir_stat = 0;
+
+        for(int i = 0; i < 25; i++){
+            cur_min = min(arr);
+            X = newX;
+            Y = newY;
+            sortArr[Y][X] = cur_min;
+
+            newX = X + dx[dir_stat];
+            newY = Y + dx[dir_stat];
+
+            // 경계면에서 방향 바꾸기
+            if(sortArr[newY][newX] != 0 || newY > 4 || newX > 4){
+                dir_stat = (dir_stat + 1) % 4;
+                newX = X + dx[dir_stat];
+                newY = Y + dy[dir_stat];
+            }
+        }
 
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 5; j++){
-                sortArr[i][j] = min(arr);
+                System.out.print(sortArr[i][j] + " ");
             }
+            System.out.println();
         }
-        return sortArr;
     }
     public static void main(String[] args){
         int[][] arr = {
@@ -49,14 +72,8 @@ public class SWPS_4_3 {
             System.out.println();
         }
 
-        int[][] result = sorting(arr);
+        sorting(arr);
 
-        for(int i = 0; i < 5; i++){
-            for(int j = 0; j < 5; j++){
-                System.out.print(result[i][j]);
-            }
-            System.out.println();
-        }
 
     }
 }
