@@ -14,6 +14,7 @@ public class num1215 {
                         check = false;
                         break;
                     }
+
                 }
                 if(check){
                     cnt++;

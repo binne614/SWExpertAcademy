@@ -2,18 +2,20 @@ import java.util.*;
 
 
 public class pratice {
-    public static void main(String[] args){
-        String X = new String("Hello");
 
-        for(int i = X.length()-1; i>=0; i--){
-            System.out.print(X.charAt(i));
-        }
-        StringBuffer sb = new StringBuffer();
-        sb.append(X);
+    static int[] stack = new int[10];
+    static int top;
 
-        System.out.println(sb.reverse());
-
+    public static void push(int input){
+        stack[top++] = input;
     }
 
+    public static void pop(int input){
+        output = stack[--top];
+    }
+    public static void main(String[] args){
 
+
+
+    }
 }
