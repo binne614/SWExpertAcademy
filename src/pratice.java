@@ -11,7 +11,7 @@ public class pratice {
     }
 
     public static void pop(int input){
-        output = stack[--top];
+      // output = stack[--top];
     }
     public static void main(String[] args){
 

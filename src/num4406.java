@@ -6,8 +6,10 @@ public class num4406 {
 
         String sentence = scanner.next();
 
-        String[] arr = sentence.split("");
+        for(int i = 0; i < sentence.length(); i++){
+            if()
+        }
 
-        System.out.print(arr);
+
     }
 }
