@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8ea4838-48d6-4e52-8bab-84e5fd77a005" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/num1959.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/num1959.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/num1222.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWExpertAcademy/num4406.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWExpertAcademy/num4406.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/num4406.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/num4406.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pratice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pratice.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/pratice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -65,7 +66,19 @@
         <entry file="file://$PROJECT_DIR$/src/num1959.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="27" lean-forward="true" selection-end-line="59" />
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="num1222.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/num1222.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +86,17 @@
       <file leaf-file-name="num4406.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/num4406.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="418">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringLatin1.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/StringLatin1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -109,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/num1213.java" />
         <option value="$PROJECT_DIR$/src/pratice.java" />
         <option value="$PROJECT_DIR$/src/num1959.java" />
+        <option value="$PROJECT_DIR$/src/num1222.java" />
         <option value="$PROJECT_DIR$/src/num4406.java" />
       </list>
     </option>
@@ -123,8 +146,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="236" />
-    <option name="y" value="74" />
+    <option name="x" value="614" />
+    <option name="y" value="5" />
     <option name="width" value="1275" />
     <option name="height" value="1025" />
   </component>
@@ -152,9 +175,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,13 +198,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.num1959">
+  <component name="RunManager" selected="Application.num4406">
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="num1208" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="num1208" />
-      <module name="SWExpertAcademy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="num1213" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -191,6 +209,11 @@
     </configuration>
     <configuration name="num1215" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="num1215" />
+      <module name="SWExpertAcademy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="num1222" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="num1222" />
       <module name="SWExpertAcademy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -243,19 +266,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.num4406" />
-      <item itemvalue="Application.num1208" />
       <item itemvalue="Application.num1215" />
       <item itemvalue="Application.num1213" />
       <item itemvalue="Application.num1959" />
+      <item itemvalue="Application.num1222" />
+      <item itemvalue="Application.num4406" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.num4406" />
+        <item itemvalue="Application.num1222" />
         <item itemvalue="Application.num1959" />
         <item itemvalue="Application.num1213" />
         <item itemvalue="Application.num1215" />
-        <item itemvalue="Application.num1208" />
-        <item itemvalue="Application.num4406" />
       </list>
     </recent_temporary>
   </component>
@@ -278,15 +301,16 @@
       <workItem from="1551083208361" duration="10866000" />
       <workItem from="1551189647901" duration="7894000" />
       <workItem from="1551256626529" duration="7211000" />
+      <workItem from="1551357601714" duration="4896000" />
+      <workItem from="1551365625418" duration="318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67769000" />
+    <option name="totallyTimeSpent" value="72983000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="74" width="1275" height="1025" extended-state="0" />
-    <editor active="true" />
+    <frame x="614" y="5" width="1275" height="1025" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,7 +326,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1437649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1437649" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -340,20 +364,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/num1210.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/num2063.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pratice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -661,21 +671,38 @@
     <entry file="file://$PROJECT_DIR$/src/pratice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/num1959.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="27" lean-forward="true" selection-end-line="59" />
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/num1222.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/StringLatin1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/num4406.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
